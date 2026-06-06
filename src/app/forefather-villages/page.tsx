@@ -16,7 +16,7 @@ export default function ForefatherVillages() {
                     src="/images/punjab-banner.jfif"
                     fill
                     priority
-                    quality={100}
+                    quality={75}
                     className="object-cover object-center scale-105 grayscale opacity-60 transition-transform duration-700"
                     alt="Ancestral Village Banner"
                 />
