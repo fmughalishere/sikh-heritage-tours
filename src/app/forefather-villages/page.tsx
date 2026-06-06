@@ -13,7 +13,7 @@ export default function ForefatherVillages() {
             <Navbar />
             <section className="relative h-[75vh] w-full overflow-hidden">
                 <Image
-                    src="/images/punjab-banner.jfif"
+                    src="/images/punjab-banner.jpg"
                     fill
                     priority
                     quality={75}
