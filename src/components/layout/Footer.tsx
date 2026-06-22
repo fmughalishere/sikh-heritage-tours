@@ -85,12 +85,15 @@ export default function Footer() {
               <Phone size={18} /> +971 54 583 4874
             </div>
           </div>
-          <div className="space-y-5">
+           <div className="space-y-5">
             <h4 className="text-xl font-black border-b-2 pb-2 uppercase tracking-tighter" style={{ color: sikhBlue, borderColor: `${sikhGold}20` }}>
-              Saudi Address
+              Saudi Arabia Address
             </h4>
             <p className="text-sm text-slate-500 leading-relaxed font-medium">
-              1st floor, 17 number Flat, Building # 3319 Muhammad ibn Abd al Aziz Madi road, Riyadh
+              Building # 3322, Street Amrou Ibn Saifi, Secondary # 8112,
+              Al Sulary District, Riyadh — Postal Code: 14265
+              <br />
+              <span className="text-xs text-slate-400">Short Address: RQYA3322</span>
             </p>
             <div className="flex items-center gap-2 font-black text-lg" style={{ color: sikhBlue }}>
               <Phone size={18} /> +966 56 311 4674

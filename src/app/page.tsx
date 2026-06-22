@@ -6,8 +6,8 @@ import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
 import Hero from '../components/sections/Hero';
 import FAQ from '../components/sections/FAQ';
-import ContactAddresses from '../components/sections/ContactAddresses';
 import { ArrowRight, Globe, History } from 'lucide-react';
+import { PACKAGES_DATA } from '../data/packages';
 
 export default function Home() {
   const sikhBlue = "#002147";
@@ -157,8 +157,48 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="py-12 sm:py-20 md:py-32 px-4 sm:px-6 md:px-10 max-w-[1440px] mx-auto">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 sm:mb-16 gap-4">
+          <div>
+            <span style={{ color: sikhGold }} className="text-[10px] font-black uppercase tracking-[4px] block mb-3">
+              From 5 Days To 7 Days
+            </span>
+            <h2 style={{ color: sikhBlue }} className="text-3xl sm:text-5xl md:text-7xl font-black tracking-tighter uppercase">
+              YATRA <span style={{ color: sikhGold }}>PACKAGES.</span>
+            </h2>
+          </div>
+          <Link href="/packages" className="group flex items-center gap-3 font-black text-[10px] uppercase tracking-widest self-start md:self-auto" style={{ color: sikhGold }}>
+            View All Packages <ArrowRight size={18} className="group-hover:translate-x-2 transition-transform" />
+          </Link>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10">
+          {PACKAGES_DATA.map((pkg) => (
+            <Link href="/packages" key={pkg.slug} className="block">
+              <motion.div
+                whileHover={{ y: -8 }}
+                className="h-full bg-slate-50 rounded-3xl sm:rounded-[40px] p-8 sm:p-10 border border-slate-100 hover:border-transparent hover:shadow-2xl transition-all duration-300"
+              >
+                <span
+                  className="text-white text-[10px] font-mono font-bold px-3 py-1.5 rounded-xl inline-block mb-6"
+                  style={{ backgroundColor: sikhBlue }}
+                >
+                  {pkg.code}
+                </span>
+                <h4 className="text-xl sm:text-2xl font-black uppercase tracking-tight mb-3" style={{ color: sikhBlue }}>
+                  {pkg.name}
+                </h4>
+                <p className="text-sm text-slate-500 font-medium leading-relaxed mb-6">{pkg.duration}</p>
+                <span className="text-[10px] font-black uppercase tracking-widest" style={{ color: sikhGold }}>
+                  Contact For Pricing →
+                </span>
+              </motion.div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
       <FAQ />
-      <ContactAddresses />
       <Footer />
     </main>
   );

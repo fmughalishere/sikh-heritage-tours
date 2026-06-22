@@ -13,6 +13,8 @@ export default function Navbar() {
         { name: 'Home', href: '/' },
         { name: 'About Us', href: '/about' },
         { name: 'Gurdwaras', href: '/gurdwaras' },
+        { name: 'Packages', href: '/packages' },
+        { name: 'Visa Guide', href: '/visa-guide' },
         { name: 'Forefather Villages', href: '/forefather-villages' },
     ];
 
@@ -34,7 +36,7 @@ export default function Navbar() {
                         priority
                     />
                 </Link>
-                <div className="hidden lg:flex gap-10 font-bold text-[12px] tracking-widest uppercase items-center">
+                <div className="hidden lg:flex gap-8 font-bold text-[12px] tracking-widest uppercase items-center">
                     {navLinks.map((link) => (
                         <Link
                             key={link.name}
@@ -50,7 +52,7 @@ export default function Navbar() {
                     
                     <Link
                         href="/contact"
-                        className="px-8 py-3 rounded-full transition-all duration-300 shadow-md font-bold border"
+                        className="px-8 py-3 rounded-full transition-all duration-300 shadow-md font-bold border whitespace-nowrap"
                         style={{
                             backgroundColor: sikhBlue,
                             borderColor: sikhBlue,
@@ -80,7 +82,7 @@ export default function Navbar() {
                 </button>
             </div>
             <div 
-                className={`absolute top-20 sm:top-24 left-0 w-full bg-white border-b shadow-xl lg:hidden flex flex-col px-6 py-8 gap-6 font-bold text-sm tracking-widest uppercase items-start transition-all duration-300 ease-in-out ${
+                className={`absolute top-20 sm:top-24 left-0 w-full bg-white border-b shadow-xl lg:hidden flex flex-col px-6 py-8 gap-6 font-bold text-sm tracking-widest uppercase items-start transition-all duration-300 ease-in-out max-h-[calc(100vh-5rem)] overflow-y-auto ${
                     isOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-4 pointer-events-none'
                 }`}
                 style={{ borderColor: `${sikhGold}26` }}
