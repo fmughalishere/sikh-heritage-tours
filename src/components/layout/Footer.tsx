@@ -70,7 +70,7 @@ export default function Footer() {
             <p className="text-sm text-slate-500 leading-relaxed font-medium">
               101-Tipu Block Shakir Ali Museum Lane Garden Town Lahore Pakistan
             </p>
-            <div className="flex items-center gap-2 font-black text-lg" style={{ color: sikhBlue }}>
+            <div className="flex items-center gap-2 font-black text-lg" style={{ color: sikhGold }}>
               <Phone size={18} /> +92 317 317 6483
             </div>
           </div>
@@ -81,7 +81,7 @@ export default function Footer() {
             <p className="text-sm text-slate-500 leading-relaxed font-medium">
               Office No 314, 3rd Floor, Dar Al Wuheida Building - Al Doha St - Hor Al Anz East - Dubai - UAE
             </p>
-            <div className="flex items-center gap-2 font-black text-lg" style={{ color: sikhBlue }}>
+            <div className="flex items-center gap-2 font-black text-lg" style={{ color: sikhGold }}>
               <Phone size={18} /> +971 54 583 4874
             </div>
           </div>
@@ -95,7 +95,7 @@ export default function Footer() {
               <br />
               <span className="text-xs text-slate-400">Short Address: RQYA3322</span>
             </p>
-            <div className="flex items-center gap-2 font-black text-lg" style={{ color: sikhBlue }}>
+            <div className="flex items-center gap-2 font-black text-lg" style={{ color: sikhGold }}>
               <Phone size={18} /> +966 56 311 4674
             </div>
           </div>
